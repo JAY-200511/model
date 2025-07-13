@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Dynamics | Advanced Business Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.min.js"></script>
+    <link rel="stylesheet" href="JOSHI.CSS">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo" data-page="home">
+            <i class="fas fa-cube"></i>
+            <span>NEXUS DYNAMICS</span>
+        </a>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+                <li><a href="#" class="nav-link" data-page="services">Services</a></li>
+                <li><a href="#" class="nav-link" data-page="clients">Clients</a></li>
+                <li><a href="#" class="nav-link" data-page="technology">Technology</a></li>
+                <li><a href="#" class="nav-link" data-page="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Page -->
+    <section id="home" class="page active">
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Innovative Business Solutions with 3D Technology</h1>
+                <p>We help businesses visualize their products and ideas with cutting-edge 3D modeling and interactive experiences that drive engagement and growth.</p>
+                <a href="#" class="btn" data-page="services">Explore Our Solutions</a>
+            </div>
+            <div class="model-container">
+                <canvas id="modelCanvas"></canvas>
+            </div>
+        </div>
+        
+        <div class="features">
+            <h2 class="section-title">Our Services</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-cube"></i>
+                    <h3>3D Product Modeling</h3>
+                    <p>Create realistic 3D models of your products for marketing, prototyping, and e-commerce.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-vr-cardboard"></i>
+                    <h3>AR/VR Experiences</h3>
+                    <p>Immersive augmented and virtual reality solutions for training, marketing, and presentations.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Interactive Web 3D</h3>
+                    <p>Embed interactive 3D models directly into your website for enhanced user engagement.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Data Visualization</h3>
+                    <p>Transform complex data into intuitive 3D visualizations for better insights and decisions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Page -->
+    <section id="services" class="page">
+        <div class="features">
+            <h2 class="section-title">Our Services</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-cube"></i>
+                    <h3>3D Product Modeling</h3>
+                    <p>Create realistic 3D models of your products for marketing, prototyping, and e-commerce.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-vr-cardboard"></i>
+                    <h3>AR/VR Experiences</h3>
+                    <p>Immersive augmented and virtual reality solutions for training, marketing, and presentations.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Interactive Web 3D</h3>
+                    <p>Embed interactive 3D models directly into your website for enhanced user engagement.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Data Visualization</h3>
+                    <p>Transform complex data into intuitive 3D visualizations for better insights and decisions.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-industry"></i>
+                    <h3>Industrial Visualization</h3>
+                    <p>Create detailed 3D models of industrial equipment and facilities for planning and training.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-home"></i>
+                    <h3>Architectural Visualization</h3>
+                    <p>Bring architectural designs to life with realistic 3D renderings and virtual tours.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>Game Development</h3>
+                    <p>Create engaging 3D games and simulations for entertainment and educational purposes.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h3>E-commerce Solutions</h3>
+                    <p>Implement 3D product viewers for online stores to increase conversion rates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Page -->
+    <section id="clients" class="page">
+        <div class="clients">
+            <h2 class="section-title">Our Valued Clients</h2>
+            
+            <div class="client-stats">
+                <div class="client-stat">
+                    <i class="fas fa-users"></i>
+                    <h3 class="count" data-target="250">0</h3>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="client-stat">
+                    <i class="fas fa-globe-americas"></i>
+                    <h3 class="count" data-target="35">0</h3>
+                    <p>Countries</p>
+                </div>
+                <div class="client-stat">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3 class="count" data-target="850">0</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="client-stat">
+                    <i class="fas fa-award"></i>
+                    <h3 class="count" data-target="28">0</h3>
+                    <p>Industry Awards</p>
+                </div>
+            </div>
+            
+            <div class="client-logos">
+                <div class="client-logo">
+                    <i class="fab fa-apple"></i>
+                </div>
+                <div class="client-logo">
+                    <i class="fab fa-microsoft"></i>
+                </div>
+                <div class="client-logo">
+                    <i class="fab fa-google"></i>
+                </div>
+                <div class="client-logo">
+                    <i class="fab fa-amazon"></i>
+                </div>
+                <div class="client-logo">
+                    <i class="fab fa-spotify"></i>
+                </div>
+                <div class="client-logo">
+                    <i class="fab fa-adobe"></i>
+                </div>
+            </div>
+            
+            <h3 class="section-title" style="margin-top: 80px;">Client Testimonials</h3>
+            
+            <div class="testimonials">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        Nexus Dynamics transformed our product visualization with their cutting-edge 3D technology. The interactive models they created for our e-commerce platform increased conversions by 45% and reduced returns by 30%.
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>CTO, TechVision Inc.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        The architectural visualization they provided for our new headquarters was breathtaking. Being able to walk through the building in VR before construction even started helped us make critical design decisions that saved us millions.
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Michael Rodriguez</h4>
+                            <p>Project Director, Urban Architects</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Page -->
+    <section id="technology" class="page">
+        <div class="tech-section">
+            <div class="tech-content">
+                <h2 class="section-title">Our Advanced Technology</h2>
+                <p>At Nexus Dynamics, we leverage the latest in WebGL and Three.js technology to create stunning 3D experiences that work seamlessly in any modern browser. Our solutions help businesses showcase products, visualize data, and create immersive experiences without requiring users to install any additional software.</p>
+                
+                <div class="tech-model-container">
+                    <div class="loading-bar">
+                        <div class="loading-progress" id="loadingProgress"></div>
+                    </div>
+                    
+                    <canvas id="techModel"></canvas>
+                    
+                    <div class="model-placeholder" id="modelPlaceholder">
+                        <i class="fas fa-cube"></i>
+                        <p>Loading 3D Visualization...</p>
+                        <p>Powered by WebGL and Three.js</p>
+                    </div>
+                    
+                    <div class="model-controls">
+                        <button id="rotateToggle"><i class="fas fa-sync-alt"></i> Auto-Rotate</button>
+                        <button id="resetView"><i class="fas fa-crosshairs"></i> Reset View</button>
+                    </div>
+                    
+                    <div class="tech-controls">
+                        <button id="prevTech"><i class="fas fa-chevron-left"></i></button>
+                        <button id="nextTech"><i class="fas fa-chevron-right"></i></button>
+                        <button id="infoToggle"><i class="fas fa-info"></i></button>
+                    </div>
+                    
+                    <div id="techInfoPanel" class="tech-info-panel">
+                        <div class="panel-header">
+                            <h3><i class="fas fa-cube"></i> WebGL Technology</h3>
+                            <button class="close-panel">&times;</button>
+                        </div>
+                        <div class="panel-content">
+                            <p>WebGL (Web Graphics Library) is a JavaScript API for rendering interactive 2D and 3D graphics within any compatible web browser without the use of plug-ins.</p>
+                            <ul>
+                                <li>Hardware-accelerated rendering</li>
+                                <li>Cross-platform compatibility</li>
+                                <li>Real-time visualization</li>
+                                <li>No plugin installation required</li>
+                                <li>Direct access to GPU capabilities</li>
+                                <li>Based on OpenGL ES standards</li>
+                                <li>Integrates with HTML5 Canvas</li>
+                                <li>Supports complex shaders</li>
+                            </ul>
+                            <p>Our implementation ensures optimal performance across all devices while maintaining the highest visual quality. We've optimized our rendering pipeline to handle complex scenes efficiently.</p>
+                            <p>With WebGL, we can create physics simulations, particle systems, and realistic lighting that respond in real-time to user interactions. The technology enables us to deliver desktop-quality graphics directly in the browser.</p>
+                            <p>Our team has developed custom tools that leverage WebGL's capabilities to create unique visual experiences that were previously only possible with native applications.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-explained">
+                    <h3>About Our Technology</h3>
+                    <p>At the core of our solutions is WebGL, a JavaScript API for rendering interactive 2D and 3D graphics within any compatible web browser without the use of plug-ins. Combined with Three.js, a cross-browser JavaScript library and API, we create GPU-accelerated 3D animations that run smoothly even on mobile devices.</p>
+                    
+                    <p>Our technology stack is designed for performance and scalability. We utilize GLTF (GL Transmission Format) for optimized 3D model delivery, reducing load times while maintaining high visual fidelity. For complex scenes, we implement level-of-detail (LOD) techniques to ensure optimal performance across all devices.</p>
+                    
+                    <div class="tech-highlights">
+                        <div class="tech-highlight">
+                            <h4><i class="fas fa-microchip"></i> Real-time Rendering</h4>
+                            <p>Our custom shaders and lighting systems deliver photorealistic results at 60fps, creating truly immersive experiences with dynamic shadows and reflections.</p>
+                        </div>
+                        <div class="tech-highlight">
+                            <h4><i class="fas fa-mobile-alt"></i> Cross-platform</h4>
+                            <p>All our solutions work seamlessly across desktop, mobile, and VR devices with consistent performance and adaptive quality settings.</p>
+                        </div>
+                        <div class="tech-highlight">
+                            <h4><i class="fas fa-shield-alt"></i> Security</h4>
+                            <p>We implement advanced model protection techniques to safeguard your intellectual property, including model encryption and obfuscation.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-details">
+                    <div class="tech-info">
+                        <h3><i class="fas fa-microchip"></i> Technology Stack</h3>
+                        <ul>
+                            <li>Three.js for 3D rendering</li>
+                            <li>WebGL for hardware-accelerated graphics</li>
+                            <li>GLTF format for optimized 3D models</li>
+                            <li>Blender for 3D modeling and animation</li>
+                            <li>React-Three-Fiber for React integration</li>
+                            <li>GSAP for advanced animations</li>
+                            <li>Cannon.js for physics simulation</li>
+                            <li>Webpack for module bundling</li>
+                        </ul>
+                    </div>
+                    <div class="tech-info">
+                        <h3><i class="fas fa-star"></i> Key Advantages</h3>
+                        <ul>
+                            <li>Real-time rendering at 60fps</li>
+                            <li>Cross-platform compatibility</li>
+                            <li>No plugin installation required</li>
+                            <li>Responsive design for all devices</li>
+                            <li>SEO-friendly implementation</li>
+                            <li>Secure and scalable solutions</li>
+                            <li>Progressive loading of assets</li>
+                            <li>Accessibility compliant</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Page -->
+    <section id="contact" class="page">
+        <div class="contact">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" placeholder="Enter your company name">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Interest</label>
+                        <select id="service">
+                            <option value="">Select a service</option>
+                            <option value="3d-modeling">3D Product Modeling</option>
+                            <option value="ar-vr">AR/VR Experiences</option>
+                            <option value="web-3d">Interactive Web 3D</option>
+                            <option value="data-viz">Data Visualization</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" placeholder="Tell us about your project" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo">
+                <i class="fas fa-cube"></i>
+                <span>NEXUS DYNAMICS</span>
+            </div>
+            <p>Transforming business through immersive 3D experiences</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="copyright">© 2023 Nexus Dynamics. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize main 3D model
+        function initMainModel() {
+            const canvas = document.getElementById('modelCanvas');
+            const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+            renderer.setSize(canvas.clientWidth, canvas.clientHeight);
+            renderer.setPixelRatio(window.devicePixelRatio);
+            
+            const scene = new THREE.Scene();
+            scene.background = null;
+            
+            const camera = new THREE.PerspectiveCamera(45, canvas.clientWidth / canvas.clientHeight, 0.1, 1000);
+            camera.position.z = 5;
+            
+            const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+            scene.add(ambientLight);
+            
+            const directionalLight = new THREE.DirectionalLight(0x4fc3f7, 1);
+            directionalLight.position.set(5, 5, 5);
+            scene.add(directionalLight);
+            
+            const pointLight = new THREE.PointLight(0x29b6f6, 1, 100);
+            pointLight.position.set(-5, -5, 5);
+            scene.add(pointLight);
+            
+            // Create a complex geometry with multiple shapes
+            const group = new THREE.Group();
+            
+            // Main cube
+            const cubeGeometry = new THREE.BoxGeometry(1, 1, 1);
+            const cubeMaterial = new THREE.MeshPhongMaterial({ 
+                color: 0x4fc3f7, 
+                transparent: true, 
+                opacity: 0.9,
+                shininess: 100
+            });
+            const cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
+            group.add(cube);
+            
+            // Sphere inside
+            const sphereGeometry = new THREE.SphereGeometry(0.4, 32, 32);
+            const sphereMaterial = new THREE.MeshPhongMaterial({ 
+                color: 0x29b6f6, 
+                emissive: 0x0288d1,
+                emissiveIntensity: 0.5
+            });
+            const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
+            group.add(sphere);
+            
+            // Torus around the cube
+            const torusGeometry = new THREE.TorusGeometry(1.2, 0.1, 16, 100);
+            const torusMaterial = new THREE.MeshPhongMaterial({ 
+                color: 0xffffff,
+                emissive: 0x4fc3f7,
+                emissiveIntensity: 0.3
+            });
+            const torus = new THREE.Mesh(torusGeometry, torusMaterial);
+            torus.rotation.x = Math.PI / 2;
+            group.add(torus);
+            
+            // Floating particles
+            const particleCount = 200;
+            const particles = new THREE.BufferGeometry();
+            const particlePositions = new Float32Array(particleCount * 3);
+            const particleSizes = new Float32Array(particleCount);
+            
+            for (let i = 0; i < particleCount; i++) {
+                const i3 = i * 3;
+                const radius = 2 + Math.random() * 3;
+                const theta = Math.random() * Math.PI * 2;
+                const phi = Math.acos(2 * Math.random() - 1);
+                
+                particlePositions[i3] = radius * Math.sin(phi) * Math.cos(theta);
+                particlePositions[i3 + 1] = radius * Math.sin(phi) * Math.sin(theta);
+                particlePositions[i3 + 2] = radius * Math.cos(phi);
+                
+                particleSizes[i] = Math.random() * 0.2 + 0.05;
+            }
+            
+            particles.setAttribute('position', new THREE.BufferAttribute(particlePositions, 3));
+            particles.setAttribute('size', new THREE.BufferAttribute(particleSizes, 1));
+            
+            const particleMaterial = new THREE.PointsMaterial({
+                color: 0x29b6f6,
+                size: 0.1,
+                transparent: true,
+                opacity: 0.8,
+                sizeAttenuation: true
+            });
+            
+            const particleSystem = new THREE.Points(particles, particleMaterial);
+            group.add(particleSystem);
+            
+            scene.add(group);
+            
+            // Orbit controls
+            const controls = new THREE.OrbitControls(camera, renderer.domElement);
+            controls.enableDamping = true;
+            controls.dampingFactor = 0.05;
+            
+            // Handle window resize
+            window.addEventListener('resize', () => {
+                camera.aspect = canvas.clientWidth / canvas.clientHeight;
+                camera.updateProjectionMatrix();
+                renderer.setSize(canvas.clientWidth, canvas.clientHeight);
+            });
+            
+            // Animation loop
+            function animate() {
+                requestAnimationFrame(animate);
+                
+                group.rotation.x += 0.005;
+                group.rotation.y += 0.01;
+                sphere.rotation.x += 0.01;
+                sphere.rotation.y += 0.01;
+                torus.rotation.y += 0.005;
+                
+                // Animate particles
+                const positions = particleSystem.geometry.attributes.position.array;
+                for (let i = 0; i < particleCount; i++) {
+                    const i3 = i * 3;
+                    positions[i3] *= 1.001;
+                    positions[i3 + 1] *= 1.001;
+                    positions[i3 + 2] *= 1.001;
+                    
+                    if (Math.sqrt(positions[i3]**2 + positions[i3+1]**2 + positions[i3+2]**2) > 6) {
+                        positions[i3] = (Math.random() - 0.5) * 0.5;
+                        positions[i3 + 1] = (Math.random() - 0.5) * 0.5;
+                        positions[i3 + 2] = (Math.random() - 0.5) * 0.5;
+                    }
+                }
+                particleSystem.geometry.attributes.position.needsUpdate = true;
+                
+                controls.update();
+                renderer.render(scene, camera);
+            }
+            
+            animate();
+        }
+        
+        // Initialize technology showcase model
+        let techScene, techCamera, techRenderer, techControls, techObject;
+        let autoRotate = true;
+        
+        function initTechModel() {
+            const canvas = document.getElementById('techModel');
+            const modelPlaceholder = document.getElementById('modelPlaceholder');
+            const loadingProgress = document.getElementById('loadingProgress');
+            
+            // Simulate loading progress
+            let progress = 0;
+            const loadingInterval = setInterval(() => {
+                progress += Math.random() * 10;
+                if (progress >= 100) {
+                    clearInterval(loadingInterval);
+                    loadingProgress.style.width = '100%';
+                    
+                    // Remove placeholder after a short delay
+                    setTimeout(() => {
+                        modelPlaceholder.style.display = 'none';
+                        createTechScene();
+                    }, 500);
+                } else {
+                    loadingProgress.style.width = progress + '%';
+                }
+            }, 200);
+        }
+        
+        function createTechScene() {
+            const canvas = document.getElementById('techModel');
+            
+            // Scene setup
+            techScene = new THREE.Scene();
+            techScene.background = new THREE.Color(0x0c0e1d);
+            techScene.fog = new THREE.Fog(0x0c0e1d, 20, 50);
+            
+            // Camera
+            techCamera = new THREE.PerspectiveCamera(75, canvas.clientWidth / canvas.clientHeight, 0.1, 1000);
+            techCamera.position.z = 15;
+            techCamera.position.y = 5;
+            
+            // Renderer
+            techRenderer = new THREE.WebGLRenderer({
+                canvas: canvas,
+                antialias: true,
+                alpha: false
+            });
+            techRenderer.setSize(canvas.clientWidth, canvas.clientHeight);
+            techRenderer.setPixelRatio(window.devicePixelRatio);
+            
+            // Lighting
+            const ambientLight = new THREE.AmbientLight(0x404040, 2);
+            techScene.add(ambientLight);
+            
+            const directionalLight = new THREE.DirectionalLight(0x4d7fff, 1.5);
+            directionalLight.position.set(5, 10, 7);
+            techScene.add(directionalLight);
+            
+            const pointLight = new THREE.PointLight(0x8a6cff, 1, 50);
+            pointLight.position.set(-5, 5, 5);
+            techScene.add(pointLight);
+            
+            // Create a tech-inspired abstract structure
+            createTechStructure();
+            
+            // Orbit controls
+            techControls = new THREE.OrbitControls(techCamera, techRenderer.domElement);
+            techControls.enableDamping = true;
+            techControls.dampingFactor = 0.05;
+            techControls.autoRotate = autoRotate;
+            techControls.autoRotateSpeed = 1;
+            
+            // Handle window resize
+            window.addEventListener('resize', onTechWindowResize);
+            
+            // Start animation loop
+            animateTech();
+        }
+        
+        function createTechStructure() {
+            // Clear existing objects
+            if (techObject) techScene.remove(techObject);
+            
+            // Group for the tech structure
+            techObject = new THREE.Group();
+            
+            // Central core
+            const coreGeometry = new THREE.IcosahedronGeometry(2, 2);
+            const coreMaterial = new THREE.MeshPhongMaterial({
+                color: 0x4d7fff,
+                wireframe: false,
+                shininess: 100,
+                emissive: 0x0a2f6e,
+                emissiveIntensity: 0.3
+            });
+            const core = new THREE.Mesh(coreGeometry, coreMaterial);
+            techObject.add(core);
+            
+            // Floating rings
+            const ringGeometry = new THREE.TorusGeometry(4, 0.2, 16, 100);
+            const ringMaterial = new THREE.MeshPhongMaterial({
+                color: 0x8a6cff,
+                emissive: 0x2a1a5e,
+                emissiveIntensity: 0.5,
+                transparent: true,
+                opacity: 0.8
+            });
+            
+            const ring1 = new THREE.Mesh(ringGeometry, ringMaterial);
+            ring1.rotation.x = Math.PI / 2;
+            techObject.add(ring1);
+            
+            const ring2 = new THREE.Mesh(ringGeometry, ringMaterial);
+            ring2.rotation.z = Math.PI / 2;
+            techObject.add(ring2);
+            
+            // Floating particles
+            const particleGeometry = new THREE.SphereGeometry(0.1, 8, 8);
+            const particleMaterial = new THREE.MeshPhongMaterial({
+                color: 0x6d8cff,
+                emissive: 0x1a3f8f,
+                emissiveIntensity: 0.8
+            });
+            
+            for (let i = 0; i < 100; i++) {
+                const particle = new THREE.Mesh(particleGeometry, particleMaterial);
+                
+                // Position particles in a spherical formation
+                const radius = 5 + Math.random() * 3;
+                const theta = Math.random() * Math.PI * 2;
+                const phi = Math.acos(2 * Math.random() - 1);
+                
+                particle.position.x = radius * Math.sin(phi) * Math.cos(theta);
+                particle.position.y = radius * Math.sin(phi) * Math.sin(theta);
+                particle.position.z = radius * Math.cos(phi);
+                
+                techObject.add(particle);
+            }
+            
+            // Add connecting lines
+            const lineMaterial = new THREE.LineBasicMaterial({
+                color: 0x4d7fff,
+                transparent: true,
+                opacity: 0.3
+            });
+            
+            for (let i = 0; i < 20; i++) {
+                const points = [];
+                points.push(new THREE.Vector3(0, 0, 0));
+                
+                // Random point on sphere
+                const radius = 5;
+                const theta = Math.random() * Math.PI * 2;
+                const phi = Math.acos(2 * Math.random() - 1);
+                
+                points.push(new THREE.Vector3(
+                    radius * Math.sin(phi) * Math.cos(theta),
+                    radius * Math.sin(phi) * Math.sin(theta),
+                    radius * Math.cos(phi)
+                ));
+                
+                const lineGeometry = new THREE.BufferGeometry().setFromPoints(points);
+                const line = new THREE.Line(lineGeometry, lineMaterial);
+                techObject.add(line);
+            }
+            
+            techScene.add(techObject);
+        }
+        
+        function onTechWindowResize() {
+            const canvas = document.getElementById('techModel');
+            techCamera.aspect = canvas.clientWidth / canvas.clientHeight;
+            techCamera.updateProjectionMatrix();
+            techRenderer.setSize(canvas.clientWidth, canvas.clientHeight);
+        }
+        
+        function animateTech() {
+            requestAnimationFrame(animateTech);
+            
+            // Rotate the object
+            if (techObject) {
+                techObject.rotation.y += 0.002;
+            }
+            
+            // Update controls
+            if (techControls) {
+                techControls.update();
+            }
+            
+            techRenderer.render(techScene, techCamera);
+        }
+        
+        // Counting animation function
+        function animateCounter(element, target, duration) {
+            let start = 0;
+            const increment = target / (duration / 16); // 16ms per frame
+            
+            const updateCounter = () => {
+                start += increment;
+                if (start < target) {
+                    element.textContent = Math.ceil(start);
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    element.textContent = target;
+                }
+            };
+            
+            updateCounter();
+        }
+        
+        // Initialize counters when they come into view
+        function initCounters() {
+            const counters = document.querySelectorAll('.count');
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const target = parseInt(entry.target.getAttribute('data-target'));
+                        animateCounter(entry.target, target, 2000);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            counters.forEach(counter => {
+                observer.observe(counter);
+            });
+        }
+        
+        // Page navigation
+        function setupNavigation() {
+            // Header scroll effect
+            window.addEventListener('scroll', () => {
+                const header = document.querySelector('header');
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+            
+            // Mobile menu toggle
+            const menuToggle = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('nav');
+            
+            menuToggle.addEventListener('click', () => {
+                nav.classList.toggle('active');
+            });
+            
+            // Page navigation
+            const navLinks = document.querySelectorAll('.nav-link');
+            const logo = document.querySelector('.logo');
+            const buttons = document.querySelectorAll('.btn[data-page]');
+            
+            function setActivePage(pageId) {
+                // Hide all pages
+                document.querySelectorAll('.page').forEach(page => {
+                    page.classList.remove('active');
+                });
+                
+                // Show active page
+                document.getElementById(pageId).classList.add('active');
+                
+                // Update active nav link
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('data-page') === pageId) {
+                        link.classList.add('active');
+                    }
+                });
+                
+                // Close mobile menu if open
+                nav.classList.remove('active');
+                
+                // Scroll to top
+                window.scrollTo(0, 0);
+                
+                // Reinitialize counters
+                initCounters();
+            }
+            
+            // Nav link click events
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const pageId = link.getAttribute('data-page');
+                    setActivePage(pageId);
+                });
+            });
+            
+            // Logo click event
+            logo.addEventListener('click', (e) => {
+                e.preventDefault();
+                setActivePage('home');
+            });
+            
+            // Button click events
+            buttons.forEach(button => {
+                button.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const pageId = button.getAttribute('data-page');
+                    setActivePage(pageId);
+                });
+            });
+            
+            // Contact form submit
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    alert('Thank you for your message! We will contact you soon.');
+                    contactForm.reset();
+                });
+            }
+            
+            // Technology panel toggle
+            const infoToggle = document.getElementById('infoToggle');
+            const techPanel = document.getElementById('techInfoPanel');
+            const closePanel = document.querySelector('.close-panel');
+            
+            if (infoToggle && techPanel) {
+                infoToggle.addEventListener('click', () => {
+                    techPanel.classList.toggle('active');
+                });
+                
+                closePanel.addEventListener('click', () => {
+                    techPanel.classList.remove('active');
+                });
+            }
+            
+            // Technology model controls
+            const rotateToggle = document.getElementById('rotateToggle');
+            const resetView = document.getElementById('resetView');
+            
+            if (rotateToggle) {
+                rotateToggle.addEventListener('click', () => {
+                    autoRotate = !autoRotate;
+                    if (techControls) {
+                        techControls.autoRotate = autoRotate;
+                    }
+                    rotateToggle.innerHTML = autoRotate ? 
+                        '<i class="fas fa-sync-alt"></i> Auto-Rotate' : 
+                        '<i class="fas fa-pause"></i> Pause Rotation';
+                });
+            }
+            
+            if (resetView) {
+                resetView.addEventListener('click', () => {
+                    if (techControls) {
+                        techControls.reset();
+                    }
+                });
+            }
+        }
+        
+        // Handle responsive changes
+        function handleResponsiveChanges() {
+            // Adjust canvas sizes on resize
+            const canvases = ['modelCanvas', 'techModel'];
+            
+            canvases.forEach(canvasId => {
+                const canvas = document.getElementById(canvasId);
+                if (canvas) {
+                    const container = canvas.parentElement;
+                    if (container) {
+                        canvas.style.width = '100%';
+                        canvas.style.height = '100%';
+                        canvas.width = container.clientWidth;
+                        canvas.height = container.clientHeight;
+                        
+                        // Update camera aspect ratio if it exists
+                        if (window[canvasId + 'Camera']) {
+                            window[canvasId + 'Camera'].aspect = container.clientWidth / container.clientHeight;
+                            window[canvasId + 'Camera'].updateProjectionMatrix();
+                        }
+                        
+                        // Update renderer size if it exists
+                        if (window[canvasId + 'Renderer']) {
+                            window[canvasId + 'Renderer'].setSize(container.clientWidth, container.clientHeight);
+                        }
+                    }
+                }
+            });
+        }
+        
+        // Initialize everything when the page loads
+        window.addEventListener('load', () => {
+            initMainModel();
+            initTechModel();
+            setupNavigation();
+            initCounters();
+            handleResponsiveChanges();
+        });
+        
+        // Add resize listener
+        window.addEventListener('resize', () => {
+            handleResponsiveChanges();
+        });
+    </script>
+</body>
+</html>
